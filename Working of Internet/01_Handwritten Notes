@@ -1,1 +1,6 @@
+✅ Golden Rule:
 
+- **`echo` or `touch` with me `folder/filename`** → make a new file inside.
+- **`mv file folder/`** → move a file into a folder.
+- **`cp file folder/`** → copy a file llinto a folder.
+- **`mkdir folder/newfolder`** → make a subfolder inside.
