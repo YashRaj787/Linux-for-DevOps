@@ -1,2 +1,2 @@
 # Linux-for-DevOps
-This is where I document my learning journey of Linux for DevOps. 
+A structured collection of my DevOps learning resources and notes.
