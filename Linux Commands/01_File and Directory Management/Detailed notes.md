@@ -24,7 +24,7 @@
 **What it does:**
 - Lists the contents of the current directory (files, folders, links, etc.).
 ---
-### Common Options
+**Common Options**
 | Command | Description |
 |---------|-------------|
 | `ls -l`   | Long listing (permissions, owner, size, date) |
@@ -43,13 +43,13 @@ ls -la
 - Combine options, e.g. `ls -lah` = long + all + human readable.
 
 # 2. `cd`
-**What it does:**
+**What it does:** 
 - Changes the current working directory.
-**Usage:**
+**Syntax:**
 ```
 cd <path>
 ```
-Examples:
+**Examples:**
 ```
 cd /home/user/Documents      # go to Documents
 cd ..                        # go up one level
@@ -64,7 +64,7 @@ cd -                         # return to previous directory
 # 3. `pwd`
 **What it does:**
 - Prints the full (absolute) path of the current working directory.
-Example:
+**Example:**
 ```
 pwd
 # Output: /home/user/Documents
@@ -74,13 +74,14 @@ pwd
 - Especially handy before running commands that depend on your location.
 
 # 4. `mkdir`
-**Meaning:** “Make Directory.”  
-**Use:** Create a new folder.
-### Syntax
+**What it does:** 
+- Make Directory.  
+**Mainly use:** Create a new folder.
+**Syntax:**
 ```bash
 mkdir <directory_name>
 ```
-Examples:
+**Examples:**
 ```
 mkdir test           # create a folder named test
 mkdir -p a/b/c       # create parent dirs if they don’t exist
@@ -90,13 +91,15 @@ mkdir -p a/b/c       # create parent dirs if they don’t exist
 - If the folder already exists, `mkdir` throws an error unless `-p` is used.
 
 # 5. `rm` and `rmdir`
-`rm` – **Remove files or directories**
+**What it does:** 
+- Remove files or directories
 ```
 rm file.txt          # delete file
 rm -r folder         # delete folder & its contents
 rm -i file.txt       # ask before deleting
 ```
 ⚠️ Be very careful with `rm -r` because it deletes everything permanently.
+
 `rmdir` – **Remove empty directories**
 ```
 rmdir empty_folder
@@ -106,7 +109,7 @@ rmdir empty_folder
 - `rm -rf` = force remove recursively (no confirmation) = **handle with caution**.
 
 # 6️. `cat` **and** `zcat`
-`cat` **(Concatenate)**
+**What it does:**
 - Displays the contents of a file, or joins multiple files.
 **Examples**:
 ```
@@ -127,3 +130,57 @@ zcat log.gz
 **Notes:**
 - Useful for reading compressed logs.
 - Works only on `.gz` files.
+
+# 7️⃣ `touch`
+**What it does:**
+- Create a new empty file or update the timestamp of an existing file.
+**Syntax:**
+```bash
+touch <filename>
+```
+**Examples:**
+```touch file.txt                # create an empty file
+touch file1.txt file2.txt     # create multiple files
+touch -c file.txt             # do not create if it doesn’t exist, just update timestamp
+```
+**Notes:**
+- Useful for quickly creating empty files.
+- Also used in scripting to update the “last modified” time of a file.
+
+# 8️⃣ `head`
+**What it does:**
+- View the first few lines of a file.
+**Syntax:**
+```head <file>
+head -n 20 <file>    # show first 20 lines
+```
+**Examples:**
+```
+head file.txt
+head -n 5 file.txt   # first 5 lines
+```
+**Notes:**
+- Default shows first 10 lines if `-n` is not specified.
+- Handy to quickly check the start of logs or large files.
+
+# 9️⃣ `tail` and `tail -f`
+**What it does:**
+- View the last few lines of a file.
+**Syntax:**
+```tail <file>
+tail -n 20 <file>    # last 20 lines
+```
+**Example:**
+```
+tail file.txt
+```
+`tail -f`
+- Follow a file in real-time, useful for live logs.
+```
+tail -f /var/log/syslog
+```
+**Notes:**
+- `tail -f` is commonly used for monitoring log files as new lines are added.
+- Exit with `Ctrl + C`.
+
+
