@@ -21,7 +21,7 @@
 20. diff
 
 # 1. `ls`
-***What it does**
+**What it does:**
 - Lists the contents of the current directory (files, folders, links, etc.).
 ---
 ### Common Options
