@@ -1,1 +1,1 @@
-In this folder, all my handwritten notes and detailed notes are available, which I created while studying these Linux commands. These notes cover practical usage, examples, and explanations that helped me understand file viewing and manipulation in Linux.
+### In this folder, all my handwritten notes and best ever detailed notes are available, which I created while studying these Linux commands. These notes cover practical usage, examples, and explanations that helped me understand file viewing and manipulation in Linux effectively. Have fun:)
