@@ -7,6 +7,7 @@ By here you can access:
 2. Disk Usage and Process Commands – [Detailed Notes](Linux%20Commands/02_Disk%20Usage%20Commands/Detailed%20notes.md)
 
 2. Disk Usage and Process Commands – [Detailed Notes](Linux%20Commands/02_Disk%20Usage%20Commands/Detailed%20notes.md)
+[Detailed Notes](https://github.com/YashRaj787/Linux-for-DevOps/blob/main/Linux%20Commands/02_Disk%20Usage%20Commands/Detailed%20notes.md)
 
 
 
