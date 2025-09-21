@@ -1,26 +1,21 @@
 # Here's the list of commands related to file and direactory management: 
-### 1. ls
-### 2. cd 
-### 3. pwd
-### 4. mkdir
-### 5. rm, rmdir
-### 6. cat, zcat
-### 7. touch
-### 8. head
-### 9. tail, tail -f
-### 10. less, more
-### 11. cp
-### 12. mv
-### 13. wc
-###14. vi editor
-### 15. ln (hard link, soft link)
-### 16. cut
-### 17. tee
-### 18. sort
-### 19. clear
-### 20. diff
+# File & Directory Management Commands
 
-# 1. `ls`
+| No. | Command(s)            | No. | Command(s)             |
+|-----|-----------------------|-----|------------------------|
+| 1   | `ls`                  | 11  | `cp`                  |
+| 2   | `cd`                  | 12  | `mv`                  |
+| 3   | `pwd`                 | 13  | `wc`                  |
+| 4   | `mkdir`               | 14  | `vi` editor           |
+| 5   | `rm`, `rmdir`         | 15  | `ln` (hard / soft link) |
+| 6   | `cat`, `zcat`         | 16  | `cut`                 |
+| 7   | `touch`               | 17  | `tee`                 |
+| 8   | `head`                | 18  | `sort`                |
+| 9   | `tail`, `tail -f`     | 19  | `clear`               |
+| 10  | `less`, `more`        | 20  | `diff`                |
+
+
+## 1. `ls`
 **What it does:**
 - Lists the contents of the current directory (files, folders, links, etc.).
 ---
@@ -42,7 +37,7 @@ ls -la
 - Use `ls` to quickly see what is inside a folder.
 - Combine options, e.g. `ls -lah` = long + all + human readable.
 
-# 2. `cd`
+## 2. `cd`
 **What it does:** 
 - Changes the current working directory.
 **Syntax:**
@@ -61,7 +56,7 @@ cd -                         # return to previous directory
 - '.' means current directory.
 - '~' is shorthand for your home folder.
 
-# 3. `pwd`
+## 3. `pwd`
 **What it does:**
 - Prints the full (absolute) path of the current working directory.
 **Example:**
@@ -73,7 +68,7 @@ pwd
 - Useful to check “Where am I?” in the filesystem.
 - Especially handy before running commands that depend on your location.
 
-# 4. `mkdir`
+## 4. `mkdir`
 **What it does:** 
 - Make Directory.  
 **Mainly use:** Create a new folder.
@@ -90,7 +85,7 @@ mkdir -p a/b/c       # create parent dirs if they don’t exist
 - `p` lets you create nested folders in one go.
 - If the folder already exists, `mkdir` throws an error unless `-p` is used.
 
-# 5. `rm` and `rmdir`
+## 5. `rm` and `rmdir`
 **What it does:** 
 - Remove files or directories
 ```
@@ -108,7 +103,7 @@ rmdir empty_folder
 - Use `rmdir` only if the folder is empty; otherwise, use `rm -r`.
 - `rm -rf` = force remove recursively (no confirmation) = **handle with caution**.
 
-# 6️. `cat` **and** `zcat`
+## 6️. `cat` **and** `zcat`
 **What it does:**
 - Displays the contents of a file, or joins multiple files.
 **Examples**:
@@ -131,7 +126,7 @@ zcat log.gz
 - Useful for reading compressed logs.
 - Works only on `.gz` files.
 
-# 7. `touch`
+## 7. `touch`
 **What it does:**
 - Create a new empty file or update the timestamp of an existing file.
 **Syntax:**
@@ -147,7 +142,7 @@ touch -c file.txt             # do not create if it doesn’t exist, just update
 - Useful for quickly creating empty files.
 - Also used in scripting to update the “last modified” time of a file.
 
-# 8. `head`
+## 8. `head`
 **What it does:**
 - View the first few lines of a file.
 **Syntax:**
@@ -163,7 +158,7 @@ head -n 5 file.txt   # first 5 lines
 - Default shows first 10 lines if `-n` is not specified.
 - Handy to quickly check the start of logs or large files.
 
-# 9. `tail` and `tail -f`
+## 9. `tail` and `tail -f`
 **What it does:**
 - View the last few lines of a file.
 **Syntax:**
@@ -183,8 +178,7 @@ tail -f /var/log/syslog
 - `tail -f` is commonly used for monitoring log files as new lines are added.
 - Exit with `Ctrl + C`.
 
-# 1️0. `less` and `more`
-
+## 1️0. `less` and `more`
 **What it does:**
 - View file contents page by page, especially useful for large files.
 `more`
@@ -211,7 +205,7 @@ less file.txt
 - `less` is generally preferred over `more` for logs or big files.
 - Works for text and command output piped via `|` (e.g., `cat file.txt | less`).
 
-# 11. `cp`
+## 11. `cp`
 **What it does:** 
 - Copy files or directories.
 **Syntax:**
@@ -228,7 +222,7 @@ cp -r folder1 folder2           # copy folder recursively
 - `-r` is required to copy directories.
 - Can overwrite files if destination exists (use `-i` to ask before overwrite).
 
-# 12. `mv`
+## 12. `mv`
 **What it does:**
 - Move or rename files/directories.
 **Syntax:**
