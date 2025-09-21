@@ -418,5 +418,3 @@ diff -w file1.txt file2.txt       # ignore spaces
 - `diff` outputs instructions to make one file like the other.
 - Often used with `patch` to apply changes.
 - Great for configuration or code changes.
-
-[Handwritten Notes](././Linux-Commands/01_File-and-Directory-Management/Handwritten-notes.md)
