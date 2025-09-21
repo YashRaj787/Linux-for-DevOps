@@ -266,17 +266,18 @@ vi filename
 - Command mode (default): navigate, delete, copy, paste, etc.
 - Insert mode: for typing text.
 - Last-line mode: for saving, quitting, etc.
+
 **Essential keys:**
-| Action             | Key         |
-|--------------------|-------------|
-| Enter insert mode  | `i`         |
-| Save changes       | `:w`        |
-| Quit               | `:q`        |
-| Save & quit        | `:wq` or `ZZ` |
-| Quit without saving | `:q!`      |
-| Delete line        | `dd`        |
-| Copy line          | `yy`        |
-| Paste line         | `p`         |
+| Action              | Key           |
+| ------------------- | ------------- |
+| Enter insert mode   | `i`           |
+| Save changes        | `:w`          |
+| Quit                | `:q`          |
+| Save & quit         | `:wq` or `ZZ` |
+| Quit without saving | `:q!`         |
+| Delete line         | `dd`          |
+| Copy line           | `yy`          |
+| Paste line          | `p`           |
 
 **Notes:**
 - `vi` is always available, even on minimal servers.
