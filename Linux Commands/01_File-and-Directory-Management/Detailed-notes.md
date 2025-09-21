@@ -419,4 +419,4 @@ diff -w file1.txt file2.txt       # ignore spaces
 - Often used with `patch` to apply changes.
 - Great for configuration or code changes.
 
-## [Next Page →](Linux%20Commands/02_Disk-Usage-Commands/Detailed-notes.md)
+###[Next Page →](Linux%20Commands/02_Disk-Usage-Commands/Detailed-notes.md)
