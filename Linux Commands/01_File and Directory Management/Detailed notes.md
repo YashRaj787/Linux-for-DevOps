@@ -1,6 +1,4 @@
-# Here's the list of commands related to file and direactory management: 
-# File & Directory Management Commands
-
+# File & Directory Management Commands:
 | No. | Command(s)            | No. | Command(s)             |
 |-----|-----------------------|-----|------------------------|
 | 1   | `ls`                  | 11  | `cp`                  |
