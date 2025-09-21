@@ -275,6 +275,7 @@ sudo pacman -Qi package_name # info about a package
 ## 15. `portage` – Package Manager for Gentoo Linux
 **What it does:**
 - Gentoo’s source-based package management system, where software is compiled from source.
+
 **Command tool:** `emerge`
 
 **Examples:**
