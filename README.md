@@ -5,7 +5,8 @@ I’ve refined these notes to make them easy to read and useful as a reference, 
 I’ll keep updating them as I learn new commands and improve my understanding.
 
 By here you can access:
-[File and Directory Management Notes](./01_File%20and%20Directory%20Management/Detailed%20notes.md)
+[01_File and Directory Management Notes](./01_File%20and%20Directory%20Management/Detailed%20notes.md)
+
 
 
 
