@@ -131,7 +131,7 @@ zcat log.gz
 - Useful for reading compressed logs.
 - Works only on `.gz` files.
 
-# 7️⃣ `touch`
+# 7. `touch`
 **What it does:**
 - Create a new empty file or update the timestamp of an existing file.
 **Syntax:**
@@ -147,7 +147,7 @@ touch -c file.txt             # do not create if it doesn’t exist, just update
 - Useful for quickly creating empty files.
 - Also used in scripting to update the “last modified” time of a file.
 
-# 8️⃣ `head`
+# 8. `head`
 **What it does:**
 - View the first few lines of a file.
 **Syntax:**
@@ -163,7 +163,7 @@ head -n 5 file.txt   # first 5 lines
 - Default shows first 10 lines if `-n` is not specified.
 - Handy to quickly check the start of logs or large files.
 
-# 9️⃣ `tail` and `tail -f`
+# 9. `tail` and `tail -f`
 **What it does:**
 - View the last few lines of a file.
 **Syntax:**
@@ -182,5 +182,67 @@ tail -f /var/log/syslog
 **Notes:**
 - `tail -f` is commonly used for monitoring log files as new lines are added.
 - Exit with `Ctrl + C`.
+
+# 1️0. `less` and `more`
+
+**What it does:**
+- View file contents page by page, especially useful for large files.
+`more`
+- Simple pager. Shows file content one screen at a time.
+```
+more file.txt
+```
+**Navigation:**
+- Space → next page
+- Enter → next line
+- `q` → quit
+`less`
+- More advanced than `more.` Allows scrolling up and down, searching, and better navigation.
+```
+less file.txt
+```
+**Navigation:**
+- Up/Down arrows → scroll
+- `G` → go to end
+- `g` → go to start
+- `/keyword` → search
+- `q` → quit
+**Notes:**
+- `less` is generally preferred over `more` for logs or big files.
+- Works for text and command output piped via `|` (e.g., `cat file.txt | less`).
+
+# 11. `cp`
+**What it does:** 
+- Copy files or directories.
+**Syntax:**
+```
+cp <source> <destination>
+```
+**Examples:**
+```
+cp file1.txt file2.txt          # copy file1.txt to file2.txt
+cp file.txt /home/user/Documents/  # copy file to another folder
+cp -r folder1 folder2           # copy folder recursively
+```
+**Notes:**
+- `-r` is required to copy directories.
+- Can overwrite files if destination exists (use `-i` to ask before overwrite).
+
+# 12. `mv`
+**What it does:**
+- Move or rename files/directories.
+**Syntax:**
+```
+mv <source> <destination>
+```
+**Examples:**
+```
+mv file.txt /home/user/Documents/   # move file to folder
+mv oldname.txt newname.txt          # rename file
+mv folder1 folder2                  # rename or move folder
+```
+**Notes:**
+- `mv` is safer than `cp + rm` for moving files.
+- Overwrites destination file if exists (use `-i` to confirm).
 
 
