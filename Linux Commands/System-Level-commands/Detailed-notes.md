@@ -46,7 +46,7 @@ uptime
 19:05:32 up 3 days,  2:17,  2 users,  load average: 0.00, 0.01, 0.05
 ```
 **Breakdown:**
--Current time
+- Current time
 - How long the system has been running
 - Number of logged-in users
 - Load average (system workload over 1, 5, 15 min)
@@ -57,6 +57,7 @@ uptime
 ## 3. `date`
 **What it does:**
 - Displays or sets the system date & time.
+
 **Syntax:**
 ```
 date [options]
@@ -82,7 +83,7 @@ sudo date -s "2025-09-21 19:10:00"   # set system date/time (root)
 - `date` is also handy inside shell scripts for timestamps.
 
 ## 4. `who` & `whoami`
-`who`
+### `who`
 **What it does:**
 - Shows who is currently logged in on the system.
 
@@ -224,6 +225,7 @@ sudo apt autoremove             # remove unneeded deps
 
 ## 11. `yum` – Yellowdog Updater, Modified
 ***(CentOS, RHEL 7, older Fedora)***
+
 **What it does:**
 - Package manager for RPM-based distributions (Red Hat family).
 **Examples:**
@@ -239,6 +241,7 @@ sudo yum search mysql      # search for a package
 
 ## 12. `dnf` – Dandified YUM
 ***(Fedora, RHEL 8+, CentOS Stream)***
+
 **What it does:**
 - Modern replacement for yum; better performance and dependency handling.
 **Examples:**
@@ -273,6 +276,7 @@ sudo pacman -Qi package_name # info about a package
 **What it does:**
 - Gentoo’s source-based package management system, where software is compiled from source.
 **Command tool:** `emerge`
+
 **Examples:**
 ```
 sudo emerge --sync             # sync package tree
