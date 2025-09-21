@@ -237,4 +237,181 @@ mv folder1 folder2                  # rename or move folder
 - `mv` is safer than `cp + rm` for moving files.
 - Overwrites destination file if exists (use `-i` to confirm).
 
+## 13. `wc` — Word Count
+**What it does:**
+- Counts lines, words, characters, and bytes in a file or from standard input.
+```
+Syntax:
+wc [options] <file>
+```
+**Examples:**
+```
+wc file.txt             # shows lines, words, bytes
+wc -l file.txt          # count only lines
+wc -w file.txt          # count only words
+wc -c file.txt          # count only bytes/characters
+```
+**Notes:**
+- Output (by default): lines words bytes
+- Combine options (e.g., wc -lw file.txt).
 
+## 14. `vi` Editor (also known as vim in modern systems)
+**What it does:**
+- A powerful text editor available on almost all Unix/Linux systems.
+**Syntax:**
+```
+vi filename
+```
+**Modes in `vi`:**
+- Command mode (default): navigate, delete, copy, paste, etc.
+- Insert mode: for typing text.
+- Last-line mode: for saving, quitting, etc.
+**Essential keys:**
+| Action             | Key         |
+|--------------------|-------------|
+| Enter insert mode  | `i`         |
+| Save changes       | `:w`        |
+| Quit               | `:q`        |
+| Save & quit        | `:wq` or `ZZ` |
+| Quit without saving | `:q!`      |
+| Delete line        | `dd`        |
+| Copy line          | `yy`        |
+| Paste line         | `p`         |
+**Notes:**
+- `vi` is always available, even on minimal servers.
+- `vim` (Vi IMproved) adds colors, undo history, etc.
+
+## 15. `ln` — Create Links
+**Links** = alternative names/paths to a file.
+**Hard Link**
+- Another name for the same physical data on disk.
+- File & hard link share the same inode.
+- If original is deleted, data is still accessible via hard link.
+**Syntax:**
+```
+ln source_file hardlink_name
+```
+**Example:**
+```
+ln file.txt file_hardlink
+```
+**Soft Link (Symbolic Link)**
+- Like a shortcut/alias pointing to the original file.
+- If the original is deleted, the symlink becomes broken.
+**Syntax:**
+```
+ln -s source_file symlink_name
+```
+**Example:**
+```
+ln -s /home/user/file.txt link_to_file
+```
+**Notes:**
+| Type      | Points to    | Survives if original is deleted? | Works across filesystems? |
+| --------- | ------------ | -------------------------------- | ------------------------- |
+| Hard link | Data (inode) | ✅ Yes                            | ❌ No                      |
+| Soft link | File path    | ❌ No                             | ✅ Yes                     |
+
+## 16. `cut`
+**What it does:** 
+- Extract (cut out) specific sections from each line of a file or output.
+**Syntax:**
+```
+cut [options] <file>
+```
+**Common options:**
+| Option | Meaning                                |
+|--------|----------------------------------------|
+| `-f`   | Specify field numbers (use with `-d`)  |
+| `-d`   | Set delimiter (default is TAB)         |
+| `-c`   | Cut by character positions             |
+**Examples:**
+```
+cut -c1-5 file.txt            # first 5 characters of each line  
+cut -d',' -f2 file.csv        # 2nd field from comma-separated file  
+cut -d':' -f1 /etc/passwd     # usernames from passwd file
+```
+**Notes:**
+- Works line by line.
+- Perfect for structured text (CSV, colon-separated configs, logs).
+
+## 17. `tee`
+**What id does:** 
+- Read from standard input, write to both a file and the screen at the same time.
+**Syntax:**
+```
+command | tee [options] file
+```
+**Examples:**
+```
+ls | tee output.txt             # show & save listing  
+echo "hi" | tee -a file.txt     # append instead of overwrite
+```
+**Options:**
+- `-a` → append to file (don’t overwrite).
+**Notes:**
+- Useful in pipelines to save intermediate or final output while still seeing it.
+- 
+## 18. `sort`
+**What it does:**
+- Sort lines of text files.
+**Syntax:**
+```
+sort [options] <file>
+```
+**Common options:**
+| Option | Meaning                       |
+| ------ | ----------------------------- |
+| `-r`   | Reverse order                 |
+| `-n`   | Numeric sort                  |
+| `-k`   | Sort by a specific key/column |
+| `-u`   | Unique (remove duplicates)    |
+**Examples:**
+```
+sort names.txt                # alphabetic  
+sort -r names.txt             # reverse order  
+sort -n numbers.txt           # numeric sort  
+sort -u names.txt             # unique lines only  
+sort -t',' -k2 file.csv       # sort by 2nd column (comma separated)
+```
+**Notes:**
+- Default is lexicographic (dictionary) order.
+- Combine `-n` and `-r` for reverse numeric sorting.
+
+## 19. `clear`
+**What it does:**
+- Clears the terminal screen so you get a clean workspace.
+**Syntax:**
+```
+clear
+```
+**Notes:**
+- It doesn’t delete history or close programs — it only scrolls the screen up.
+- Shortcut: `Ctrl + L `works the same in most terminals.
+
+## 20. `diff`
+**What it does:**
+- Compares two text files line-by-line and shows the differences.
+**Syntax:**
+```
+diff [options] file1 file2
+```
+**Common options:**
+| Option | Meaning                                       |
+| ------ | --------------------------------------------- |
+| `-u`   | Unified format (shows context around changes) |
+| `-c`   | Context format                                |
+| `-i`   | Ignore case                                   |
+| `-w`   | Ignore whitespace                             |
+**Examples:**
+```
+diff file1.txt file2.txt          # basic comparison  
+diff -u old.txt new.txt           # unified diff (popular for patches)  
+diff -w file1.txt file2.txt       # ignore spaces
+```
+**Notes:**
+- `diff` outputs instructions to make one file like the other.
+- Often used with `patch` to apply changes.
+- Great for configuration or code changes.
+
+## Next Page →
