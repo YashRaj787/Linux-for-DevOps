@@ -5,5 +5,6 @@ I’ve refined these notes to make them easy to read and useful as a reference, 
 I’ll keep updating them as I learn new commands and improve my understanding.
 
 By here you can access:
-1. [File and Directory Management](./01_File_and_Directory_Management)
+1. [File and Directory Management](https://github.com/<username>/01_File_and_Directory_Management)
+
 
