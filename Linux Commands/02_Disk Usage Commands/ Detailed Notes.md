@@ -12,6 +12,7 @@
 ## 1. `df` — Disk Free
 **What it does:**
 - Shows disk space usage of mounted filesystems.
+
 **Syntax:**
 ```
 df [options]
@@ -29,6 +30,7 @@ df -i                      # show inode usage
 ## 2. `du` — Disk Usage
 **What it does:**
 - Shows size of files and directories.
+
 **Syntax:**
 ```
 du [options] <file_or_directory>
@@ -50,6 +52,7 @@ du -sh * | sort -h
 ## 1. `ps` — Process Status
 **What it does:** 
 - Displays information about the running processes on your system.
+
 **Syntax:**
 ```
 ps [options]
@@ -75,6 +78,7 @@ ps aux | grep firefox    # find a specific process
  ## 2. `top` — Task Manager in Terminal
  **What it does:**
 - Shows real-time information about running processes, CPU, memory, etc.
+
 **Syntax:**
 ```
 top
@@ -95,6 +99,7 @@ top
 ## 3. `fuser` — Identify Processes Using a File or Socket
 **What it does:**
 - Shows which processes are using a specific file, directory, or port.
+
 **Syntax:**
 ```
 fuser [options] <file_or_socket>
@@ -113,6 +118,7 @@ fuser -k 8080/tcp            # kill processes using port 8080
 ## 4. `kill` — Terminate Processes
 **What it does:**
 - Send a signal to a process (most often to stop/terminate it).
+
 **Syntax:**
 ```
 kill [options] <PID>
@@ -130,6 +136,7 @@ kill -l            # list all signals
 ## 5. `nohup` — Run Commands Immune to Hangups
 **What it does:**
 - Runs a command that keeps running even after you log out or close the terminal.
+
 **Syntax:**
 ```
 nohup command [args] &
@@ -146,6 +153,7 @@ nohup ./long_task.sh > out.log &
 ## 6. `free` — Memory Usage Report
 **What it does:**
 - Displays the amount of free and used RAM/swap in the system.
+
 **Syntax:**
 ```
 free [options]
@@ -164,6 +172,7 @@ free -h      # human-readable
 ## 7. `vmstat` — Virtual Memory Statistics
 **What it does:**
 - Reports statistics about processes, memory, I/O, CPU, etc. (system health).
+
 **Syntax:**
 ```
 vmstat [delay] [count]
