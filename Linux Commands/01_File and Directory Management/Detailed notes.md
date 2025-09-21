@@ -1,24 +1,24 @@
-# Here is the list of commands related to file and direactory management: 
-1. ls 
-2. cd 
-3. pwd
-4. mkdir
-5. rm, rmdir
-6. cat, zcat
-7. touch
-8. head
-9. tail, tail -f
-10. less, more
-11. cp
-12. mv
-13. wc
-14. vi editor
-15. ln (hard link, soft link)
-16. cut
-17. tee
-18. sort
-19. clear
-20. diff
+# Here's the list of commands related to file and direactory management: 
+### 1. ls
+### 2. cd 
+### 3. pwd
+### 4. mkdir
+### 5. rm, rmdir
+### 6. cat, zcat
+### 7. touch
+### 8. head
+### 9. tail, tail -f
+### 10. less, more
+### 11. cp
+### 12. mv
+### 13. wc
+###14. vi editor
+### 15. ln (hard link, soft link)
+### 16. cut
+### 17. tee
+### 18. sort
+### 19. clear
+### 20. diff
 
 # 1. `ls`
 **What it does:**
