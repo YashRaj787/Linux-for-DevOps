@@ -4,4 +4,5 @@ I’ve refined these notes to make them easy to read and useful as a reference, 
 
 I’ll keep updating them as I learn new commands and improve my understanding.
 
-Thankyou! Have fun :)
+By here you can access:
+1. [File and directory system](./File and direcotory system.md)
