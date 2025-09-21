@@ -4,7 +4,7 @@ I’ve refined these notes to make them easy to read and useful as a reference, 
 
 By here you can access:
 1. File and Directory Management- [Detailed Notes](./Linux%20Commands/01_File%20and%20Directory%20Management/Detailed%20notes.md) | [Handwritten Notes](././Linux%20Commands/01_File%20and%20Directory%20Management/Handwritten%20Notes.md)
-2. Disk Usage and Process Commands- [Detailed Notes](./Linux%20Commands/02_Disk%20Usage%20Commands/Detailed%20notes.md) 
+2. Disk Usage and Process Commands- [Detailed Notes](https://github.com/YashRaj787/Linux-for-DevOps/blob/main/Linux%20Commands/02_Disk%20Usage%20Commands/Detailed%20Notes.md)
 
 
 
