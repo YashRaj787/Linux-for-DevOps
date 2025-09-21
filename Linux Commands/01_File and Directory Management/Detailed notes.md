@@ -63,7 +63,7 @@ pwd
 # Output: /home/user/Documents
 ```
 **Notes:**
-- Useful to check “Where am I?” in the filesystem.
+- Very Useful to check “Where am I?” in the filesystem.
 - Especially handy before running commands that depend on your location.
 
 ## 4. `mkdir`
