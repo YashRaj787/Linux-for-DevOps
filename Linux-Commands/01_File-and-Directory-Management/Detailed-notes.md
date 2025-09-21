@@ -420,4 +420,4 @@ diff -w file1.txt file2.txt       # ignore spaces
 - Great for configuration or code changes.
 
 [Handwritten Notes](././Linux-Commands/01_File-and-Directory-Management/Handwritten-notes.md)
-Disk Usage and Process Commands – [Detailed Notes](Linux%20Commands/02_Disk-Usage-Commands/Detailed-notes.md)
+Disk Usage and Process Commands – [Detailed Notes](Linux-Commands/02_Disk-Usage-Commands/Detailed-notes.md)
