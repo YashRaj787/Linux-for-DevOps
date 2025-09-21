@@ -6,8 +6,6 @@ By here you can access:
 1. File and Directory Management- [Detailed Notes](./Linux%20Commands/01_File-and-Directory-Management/Detailed-notes.md) | [Handwritten Notes](././Linux%20Commands/01_File-and-Directory-Management/Handwritten-notes.md)
 2. Disk Usage and Process Commands – [Detailed Notes](Linux%20Commands/02_Disk-Usage-Commands/Detailed-notes.md)
 
-2
-
 
 
 
