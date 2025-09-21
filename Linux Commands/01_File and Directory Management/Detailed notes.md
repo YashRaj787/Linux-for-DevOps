@@ -277,6 +277,7 @@ vi filename
 | Delete line        | `dd`        |
 | Copy line          | `yy`        |
 | Paste line         | `p`         |
+
 **Notes:**
 - `vi` is always available, even on minimal servers.
 - `vim` (Vi IMproved) adds colors, undo history, etc.
@@ -325,6 +326,7 @@ cut [options] <file>
 | `-f`   | Specify field numbers (use with `-d`)  |
 | `-d`   | Set delimiter (default is TAB)         |
 | `-c`   | Cut by character positions             |
+
 **Examples:**
 ```
 cut -c1-5 file.txt            # first 5 characters of each line  
@@ -366,6 +368,7 @@ sort [options] <file>
 | `-n`   | Numeric sort                  |
 | `-k`   | Sort by a specific key/column |
 | `-u`   | Unique (remove duplicates)    |
+
 **Examples:**
 ```
 sort names.txt                # alphabetic  
@@ -403,6 +406,7 @@ diff [options] file1 file2
 | `-c`   | Context format                                |
 | `-i`   | Ignore case                                   |
 | `-w`   | Ignore whitespace                             |
+
 **Examples:**
 ```
 diff file1.txt file2.txt          # basic comparison  
