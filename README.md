@@ -5,7 +5,7 @@ I’ve refined these notes to make them easy to read and useful as a reference, 
 By here you can access:
 1. File and Directory Management- [Detailed Notes](./Linux-Commands/01_File-and-Directory-Management/Detailed-notes.md) | [Handwritten Notes](././Linux-Commands/01_File-and-Directory-Management/Handwritten-notes.md)
 2. Disk Usage and Process Commands – [Detailed Notes](Linux-Commands/02_Disk-Usage-and-Process-Commands/Detailed-notes.md)
-3. System Level Commands - [Detailed Notes](Linux-Commands/03_System-Level-and-Process-Commands/Detailed-Notes.md)
+3. System Level Commands - [Detailed Notes](Linux-Commands/03_System-Level-Commands/Detailed-notes.md)
 4. User Group Managent Commands - [Detailed Notes](Linux-Commands/04_User-Group-Managent-Commands/Detailed-Notes.md)
 5. File Permission Commands - [Detailed Notes](Linux-Commands/05_File-Permission-Commands/Detailed-Notes.md)
 6. Compression Commands - [Detailed Notes](Linux-Commands/06_Compression-Commands/Detailed-Notes.md)
