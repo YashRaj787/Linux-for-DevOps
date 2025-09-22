@@ -1,4 +1,5 @@
 # User & Group Management Commands
+## These are the User & Group Management Commands commonly used in DevOps.
 | #  | Command     | #  | Command       |
 |----|-------------|----|---------------|
 | 1  | sudo        | 6  | userdel       |
