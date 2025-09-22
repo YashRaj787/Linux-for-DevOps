@@ -1,4 +1,5 @@
-# System-level Commands
+# System level Commands
+## These are the System level Commands commonly used in DevOps.
 | #  | Command   | #  | Command  |
 |----|-----------|----|----------|
 | 1  | uname     | 11 | apt      |
