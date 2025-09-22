@@ -1,4 +1,5 @@
-# File & Directory Management Commands:
+# File & Directory Management Commands
+## These are the File & Directory Management Commands commonly used in DevOps.
 | No. | Command(s)            | No. | Command(s)             |
 |-----|-----------------------|-----|------------------------|
 | 1   | `ls`                  | 11  | `cp`                  |
