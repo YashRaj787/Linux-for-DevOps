@@ -11,3 +11,4 @@ By here you can access:
 6. Compression Commands - [Detailed Notes](Linux-Commands/06_Compression-Commands/Detailed-Notes.md)
 7. File Transfer Commands - [Detailed Notes](Linux-Commands/07_File-Transfer-Commands/Detailed-Notes.md)
 8. Networking Commands - [Detailed Notes](Linux-Commands/08_Networking-Commands/Detailed-Notes.md)
+9. Advanced Linux Commands - [Detailed Notes](Linux-Commands/09_Advanced-Linux-Commands/Detailed-Notes.md)
