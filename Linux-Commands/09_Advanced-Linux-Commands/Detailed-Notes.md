@@ -57,7 +57,7 @@ sed '/^INFO/s/old/new/' logfile.txt
 - Ideal for automated editing, configuration changes, batch replacements.
 - Supports complex regex and multi-line patterns.
 
-3️⃣ `grep` — Pattern Searching
+## 3. `grep` — Pattern Searching
 **What it does:**
 - Searches for strings or regex patterns in files/output.
 - Can highlight matches, filter lines, and combine with other commands.
